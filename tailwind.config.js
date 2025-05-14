@@ -1,0 +1,82 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+        serif: ['"Playfair Display"', 'serif'],
+        handwriting: ['"Dancing Script"', 'cursive'],
+      },
+      colors: {
+        primary: {
+          50: '#f0f8ff',
+          100: '#e0f0fe',
+          200: '#bae0fd',
+          300: '#7cc5fb',
+          400: '#36a3f7',
+          500: '#0c87e8',
+          600: '#0066cc',
+          700: '#0054a6',
+          800: '#004789',
+          900: '#003c73',
+        },
+        accent: {
+          50: '#fef2f3',
+          100: '#fde6e7',
+          200: '#fbd0d5',
+          300: '#f7a8b4',
+          400: '#f27a8e',
+          500: '#e6466e',
+          600: '#d92d5e',
+          700: '#ba1d4e',
+          800: '#9c1b45',
+          900: '#831b3d',
+        },
+        sakura: {
+          50: '#fef2f9',
+          100: '#fde6f4',
+          200: '#fbcfea',
+          300: '#f9a8d7',
+          400: '#f47bbe',
+          500: '#ec4da3',
+          600: '#db277e',
+          700: '#bd1e63',
+          800: '#9c1c51',
+          900: '#821c46',
+        },
+        midnight: {
+          50: '#f1f2fb',
+          100: '#e2e5f7',
+          200: '#cbd0f2',
+          300: '#a8b4e8',
+          400: '#808edc',
+          500: '#5d69cf',
+          600: '#4a4bc1',
+          700: '#413eaf',
+          800: '#37358f',
+          900: '#171445',
+          950: '#0d0a28',
+        },
+      },
+      animation: {
+        'float': 'float 6s ease-in-out infinite',
+        'float-slow': 'float 8s ease-in-out infinite',
+        'float-slower': 'float 10s ease-in-out infinite',
+        'spin-slow': 'spin 8s linear infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'anime-sky': 'linear-gradient(to bottom, #7f5af0, #2b2c7c)',
+        'sakura-pattern': 'url("https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")',
+      },
+    },
+  },
+  plugins: [],
+};
